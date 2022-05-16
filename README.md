@@ -1,5 +1,5 @@
 # Hill_Cipher_Agorithm
-# Introduction of Hill Cipher
+### Introduction of Hill Cipher
 
 
 Hill Cipher is a substitution cipher that uses basic matrix theory principles and was invented by Lester S. Hill in 1929. In the cipher algorithm, each letter is reflected to a number modulo 26, for example A=0, B=1, C=2... A string of letters is reflected to a n-dimensional vector, multiplied by an n×n matrix, and then the result is MOD26.
