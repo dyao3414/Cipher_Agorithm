@@ -6,20 +6,24 @@ def encrypt(plaintxt,cipherKey):
     if size*size!=len(cipherKey):
         print('Error,the length of cipher key needs to be a percfect square number')
         return
-    lst=[cipherKey[i:i+size].lower()for i in range(0, len(cipherKey), size)]
+    lst=[cipherKey[i:i+size] for i in range(0, len(cipherKey), size)]
     ciphermatrix=[]
     for i in range(0,len(lst)):
         temp=[ord(letter)-ord('a')for letter in list(lst[i])]
         ciphermatrix.append((temp))
     ciphermatrix=np.mat(ciphermatrix)
+    print(ciphermatrix)
+    print(np.linalg.det(ciphermatrix))
     if np.linalg.det(ciphermatrix)==0:
-        print('error the ciphermatrix is not invertable')
-        return
+      print('error the ciphermatrix is not invertable')
+      return
     try:
-        inv_cipher=np.mat(Matrix(ciphermatrix).inv_mod(26)) #test if the matrix is invertable
-    except:
-        print('the cipherKey matrix is not invertable')
-        return
+      inv_cipher=np.mat(Matrix(ciphermatrix).inv_mod(26))
+      print(inv_cipher)
+    except ValueError as E:
+      print('the cipherKey matrix is not invertable, determinant of cipherMatrix needs to be prime to 26')
+      print(E)
+      return
     while len(plaintxt)%size!=0: #if the lengh of txt cannot be divided by the dimension of ciphermatrix with no remain, add a to the txt
         plaintxt+='a'
     col_dim=int(len(plaintxt)/size) # calculate how many columns the txt_matrix is
