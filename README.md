@@ -1,4 +1,37 @@
-# Hill_Cipher_Agorithm
+# Cipher_Agorithm
+
+This repository is still being written, as many functions are not complete yet.
+
+### CipherGUI.py
+
+This file is intended to be an integration of all the cipher methods in this repository, and it provides a user interface for easy use. The GUI interface is entirely written in python by TKinter library.
+
+
+
+
+![1653016658(1)](https://user-images.githubusercontent.com/102843970/169443592-4d4d2f16-efda-464c-ab31-8dc7b635cee2.png)
+
+When encrypting, simply select the method you want to use. After clicking, the button selected will be sunkun, as it tells you the cipher method is being used.
+The plain text field is to enter the text that you want to be ciphered, the Key phrase field is for Cipher key entry
+
+Let's try a really cool example！
+For example, I selected the Hill cipher as my method to encrypt, and I entered text that I wanted to cipher "Attack is tonight please do it quick"
+Note, there will be no space when I type that in
+And my key phrase is "thereisnofreelan"
+Note, for Hill Cipher, the length of key phrase needs to be a perfect square number, such as 9, 16, 25 etc. Because the concept of Hill Cipher is to convert key phrase to a sqaured matrix.
+Now, my interface looks like this
+![1662d79e2b2dab2567b966eb746febd](https://user-images.githubusercontent.com/102843970/169444458-88d2524e-642a-422e-826d-ef33b8257fa7.png)
+
+When I hit encrypt, the encrupted message is shown in the Encrypted Text field 
+
+![1653017227(1)](https://user-images.githubusercontent.com/102843970/169444656-002e5e50-e7f6-45dc-8f3d-1f76944f4f59.png)
+
+
+Thus "gtmeafdlzayyyuuyuavoegdvaylgyvbh" is my encrypted message.
+
+
+
+
 ### Introduction of Hill Cipher
 
 
