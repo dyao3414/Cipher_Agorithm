@@ -1,6 +1,6 @@
 # Cipher_Agorithm
 
-This repository is still being written, as many functions are not complete yet.
+This repository is still being written, as many functions are still under developement.
 
 ### CipherGUI.py
 
@@ -20,9 +20,11 @@ Note, there will be no space when I type that in
 And my key phrase is "thereisnofreelan"
 Note, for Hill Cipher, the length of key phrase needs to be a perfect square number, such as 9, 16, 25 etc. Because the concept of Hill Cipher is to convert key phrase to a sqaured matrix.
 Now, my interface looks like this
+
+
 ![1662d79e2b2dab2567b966eb746febd](https://user-images.githubusercontent.com/102843970/169444458-88d2524e-642a-422e-826d-ef33b8257fa7.png)
 
-When I hit encrypt, the encrupted message is shown in the Encrypted Text field 
+When I hit encrypt, the encrypted message is shown in the Encrypted Text field 
 
 ![1653017227(1)](https://user-images.githubusercontent.com/102843970/169444656-002e5e50-e7f6-45dc-8f3d-1f76944f4f59.png)
 
